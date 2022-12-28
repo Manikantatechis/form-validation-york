@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="#">
+    <label for="uid">Userid</label>
+    <input type="text" id="uid" />
+    <small id="invalid"></small>
+    <br><br>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" />
+    <small id="invalidname"></small>
+    <br><br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" />
+    <small id="invalidlname"></small>
+    <br><br>
+    <label for="lname">DOB</label>
+    <input type="date" id="date" />
+    <small id="datediff1"></small>
+    <p id="datediff"></p>
+    <p id="ageValid"></p>
+    <input type="submit" onclick="validation()" />
+  </form>
+  <script>
+    for (let i = 0; i < 20; i++) {
+      for (let j = 0; j <= i; j++) {
+        document.write('<span>x</span>')
+      }
+      document.write('<br />')
+    }
+  </script>
+</body>
+<script src="script.js"></script>
+
+</html>
